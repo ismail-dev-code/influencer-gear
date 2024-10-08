@@ -44,10 +44,11 @@
 /* banner section started */
 .banner-container{
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 130px;
   margin-top: 50px;
+  margin-right: 120px;
+  margin-left: 120px;
   padding-bottom: 69px;
 }
 .banner-right-container{
@@ -75,3 +76,51 @@
   width: 505px;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 576px) {
+  .heading {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+  .nav-list{
+    display: none;
+  }
+  .banner-container{
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .banner-right-container{
+   width: 257px;
+   background-image: url("images/circel-mobile.svg");
+   margin-left: 51px;
+  }
+  .banner-right-container img{
+    padding: 0px;
+    width: 100%;
+  }
+  .banner-left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-left-container h1{
+    font-size: 24px;
+    width: 80%;
+    line-height: 42px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .banner-left-container p{
+    font-size: 14px;
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+}
+
